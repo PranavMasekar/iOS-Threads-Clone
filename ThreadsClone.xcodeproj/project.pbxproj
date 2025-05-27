@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		29C82CC42DE3237C00FE0982 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 29C82CC32DE3237C00FE0982 /* FirebaseAuth */; };
+		29C82CC62DE3237C00FE0982 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 29C82CC52DE3237C00FE0982 /* FirebaseFirestore */; };
+		29C82CC82DE3237C00FE0982 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 29C82CC72DE3237C00FE0982 /* FirebaseStorage */; };
+		29E5CAD52DE4B82D008E47CC /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 29E5CAD42DE4B82D008E47CC /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		295C0FEE2DE199A700E2DEE2 /* ThreadsClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadsClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E5CAD52DE4B82D008E47CC /* Kingfisher in Frameworks */,
+				29C82CC42DE3237C00FE0982 /* FirebaseAuth in Frameworks */,
+				29C82CC62DE3237C00FE0982 /* FirebaseFirestore in Frameworks */,
+				29C82CC82DE3237C00FE0982 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = ThreadsClone;
 			packageProductDependencies = (
+				29C82CC32DE3237C00FE0982 /* FirebaseAuth */,
+				29C82CC52DE3237C00FE0982 /* FirebaseFirestore */,
+				29C82CC72DE3237C00FE0982 /* FirebaseStorage */,
+				29E5CAD42DE4B82D008E47CC /* Kingfisher */,
 			);
 			productName = ThreadsClone;
 			productReference = 295C0FEE2DE199A700E2DEE2 /* ThreadsClone.app */;
@@ -94,6 +109,10 @@
 			);
 			mainGroup = 295C0FE52DE199A700E2DEE2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				29C82CC22DE3237C00FE0982 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				29E5CAD32DE4B82D008E47CC /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 295C0FEF2DE199A700E2DEE2 /* Products */;
 			projectDirPath = "";
@@ -322,6 +341,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29C82CC22DE3237C00FE0982 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.13.0;
+			};
+		};
+		29E5CAD32DE4B82D008E47CC /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29C82CC32DE3237C00FE0982 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C82CC22DE3237C00FE0982 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		29C82CC52DE3237C00FE0982 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C82CC22DE3237C00FE0982 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		29C82CC72DE3237C00FE0982 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29C82CC22DE3237C00FE0982 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		29E5CAD42DE4B82D008E47CC /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29E5CAD32DE4B82D008E47CC /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 295C0FE62DE199A700E2DEE2 /* Project object */;
 }
